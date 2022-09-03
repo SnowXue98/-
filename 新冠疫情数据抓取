@@ -1,0 +1,10 @@
+#导入requests这个库
+import requests   
+url= “https://c.m.163.com/ug/api/wuhan/app/data/
+list-total?t=332441960097”
+#通过requests.get这个方法。可以去获取俩中的数据，存到r中
+r=requests.get(url)   
+#获取页面当中全部信息，把信息存在demo中
+demo=r.text
+#输出demo
+print（demo）
